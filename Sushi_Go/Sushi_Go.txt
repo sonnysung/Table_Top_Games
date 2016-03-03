@@ -1,0 +1,15 @@
+Cards
+    Type -- Wasabi, Maki, Sashimi, Dumplings, etc
+    Value -- If they contain a value, like Maki (1-3 amounts per card)
+        Or we can do individual cards instead of the amount
+Hand
+    Contain of cards, stacks that are passed
+
+Deck
+    Contains all the cards, cards are drawn from here into the Hands
+
+Played
+    Contains cards played by the player in that round
+    
+Player
+    A person that takes part in the game
