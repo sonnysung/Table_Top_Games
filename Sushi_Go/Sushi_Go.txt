@@ -39,9 +39,31 @@ Score Calculation
 
 Strats -- the fun part
     Approaches
+    ----------
         Greedy --Pick the card with the highest possible outcome, even tho it is not guaranteed
-            ie. Pick Sasahimi, because it has the highest possible outcome of 10
+            ie. Pick Sasahimi, because it has the highest possible outcome of 10 (if you have 3),
+                    *If you have seen all other hands, you will have an idea if the multiples are possible.
+                        ie. There is only 2 Sashimis in all the hands in the round, skip picking Sashimis
+                        
         Safe  --Pick the highest value card with guaranteed value
             ie. Pick Nigiri or Dumpling because it is a guaranteed value
-
             
+        Offensive --More advanced strat of denying combos to other players
+            ie. If a player is collecting Tempura pairs, pick Tempura to deny them points. Same with Sasahimi.
+            
+        Attack Player X 
+            Use Offensive tactics against Player X
+            Help friendly Players by not taking beneficial combo cards from hand.
+                *Make sure Player X doesn't also benefit from leaving them in
+            Bit tricky to implement.
+            
+Picking A Card
+    Immediate Value
+        Points that will be added immediately from the selection, absolute minimum this card will add to the player score
+            *Some have a value of 0 -- combos, multiplers, etc
+                *Chopstick is a special card which allows for the selection of 2 cards sometime in the future
+            *Some will ahve a finite value
+    Possible Value
+        
+        
+    
