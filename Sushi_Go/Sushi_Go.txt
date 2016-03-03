@@ -1,15 +1,47 @@
-Cards
-    Type -- Wasabi, Maki, Sashimi, Dumplings, etc
-    Value -- If they contain a value, like Maki (1-3 amounts per card)
-        Or we can do individual cards instead of the amount
-Hand
-    Contain of cards, stacks that are passed
-
-Deck
-    Contains all the cards, cards are drawn from here into the Hands
-
-Played
-    Contains cards played by the player in that round
+Classes
+    Cards
+        Type -- Wasabi, Maki, Sashimi, Dumplings, etc
+        Value -- If they contain a value, 
+            like Maki (1-3 amounts per card)
+            like Nigiri (1-3 value per card)
+            Or we can do individual cards instead of the amount
+        
+    Hand
+        Contain of cards, stacks that are passed
     
-Player
-    A person that takes part in the game
+    Deck
+        Contains all the cards, cards are drawn from here into the Hands
+    
+    Played
+        Contains cards played by the player in that round
+        Keeps track of order because 
+        
+    Player
+        A person that takes part in the game
+        Can do actions with Hand
+        Owner of Played
+        *Special Cards
+            Chop Sticks -- allows two cards to be played per hand, discarded after use
+            Pudding -- Bonus or penality at the end of the game (not end of round), +6 pts for most, -6 for lease.
+    
+    Score
+        Keeps a tally of the score for the round, based on the Score Calculation
+
+Score Calculation
+    Calculates score based on all Played hands from the round
+        *Tempura Pairs
+        *Sashimi Triples
+        *Dumpling Stacks
+        *Maki -- most of, 2nd most of
+        *Wasabi/Nigiri, pairs, 3*Nigiri(value)
+        *Nigiri
+        
+
+Strats -- the fun part
+    Approaches
+        Greedy --Pick the card with the highest possible outcome, even tho it is not guaranteed
+            ie. Pick Sasahimi, because it has the highest possible outcome of 10
+        Safe  --Pick the highest value card with guaranteed value
+            ie. Pick Nigiri or Dumpling because it is a guaranteed value
+
+            
