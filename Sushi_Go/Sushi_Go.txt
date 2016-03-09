@@ -25,7 +25,7 @@ Classes
             //List that contains all the cards in the hand
             List Cards  
         Members
-            //Return list that contains all the cards in the hard            
+            //Return list that contains all the cards in the hand            
             getCards()
             //Remove Card from the List of Cards
             removeCard(Card c)
@@ -36,11 +36,34 @@ Classes
     
     Deck
         Contains all the cards, cards are drawn from here into the Hands
+        Variables
+            //List that contains all the cards in the deck
+            List Cards
+        Members
+            //initializes the deck from a set amount of cards
+            initialize(Set of cards)
+            //shuffle deck
+            shuffle()
+            //remove card from the deck
+            takecard()
+            //remove multiple cards from the deck
+            takecards(unsigned number_of_cards)
     
     Played
         Contains cards played by the player in that round
-        Keeps track of order because 
+        Keeps track of order because might need for combos
+        Keeps track of last played because might need for combos
         
+        Variables
+            //List that contains all the cards played by a player
+            List Cards
+        Members
+            //Get a list that contains all the cards played by the player
+            getCards()
+            //Returns the last card played by the player
+            getLastCardPlayed()
+            
+                    
     Player
         A person that takes part in the game
         Can do actions with Hand
@@ -48,6 +71,16 @@ Classes
         *Special Cards
             Chop Sticks -- allows two cards to be played per hand, discarded after use
             Pudding -- Bonus or penality at the end of the game (not end of round), +6 pts for most, -6 for lease.
+        Pick card
+        Use chopstick
+        
+            
+        Variables
+        
+        Members
+            //Pick card from hand
+            pickCard( deck, card );
+            
     
     Score
         Keeps a tally of the score for the round, based on the Score Calculation
